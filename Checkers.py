@@ -16,6 +16,8 @@ class Window2(QMainWindow):
         super().__init__()
         self.setWindowTitle("Grid Layouts")
         self.layout = QGridLayout()
+        self.layout.setSpacing(0)
+        self.layout.setContentsMargins(0,0,0,0)
         for i in range (4):
             if i%2 == 0:
                 for j in range(4):
